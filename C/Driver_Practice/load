@@ -1,0 +1,16 @@
+#!/bin/sh
+mode="666"
+device_name="mycdrv"
+module_name="lab4_1"
+
+#Register modules to kernel
+insmod ./$module_name.ko
+
+#Obtain major number
+major=$(awk "\$2==\"$device_name\" {print \$1}" /proc/devices)
+
+
+#Create device node
+mknod -m $mode /dev/mycdrv c $major 0
+
+

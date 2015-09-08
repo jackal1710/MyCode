@@ -1,0 +1,1 @@
+cmd_/home/jackal/Driver_Practice/Writing_Linux_Driver/lab9_1b.ko := ld -r -m elf_x86_64 -T /usr/src/linux-headers-3.13.0-37-generic/scripts/module-common.lds --build-id  -o /home/jackal/Driver_Practice/Writing_Linux_Driver/lab9_1b.ko /home/jackal/Driver_Practice/Writing_Linux_Driver/lab9_1b.o /home/jackal/Driver_Practice/Writing_Linux_Driver/lab9_1b.mod.o

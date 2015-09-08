@@ -1,0 +1,5 @@
+#!/bin/sh
+
+module="hello_world"
+
+insmod ./${module}.ko $* || exit 1

@@ -1,0 +1,12 @@
+#!/bin/sh
+mode="666"
+device_name="mycdrv"
+module_name="lab4_1"
+
+#Remove  device node
+rm /dev/$device_name
+
+#Unregister module
+rmmod $module_name
+
+
